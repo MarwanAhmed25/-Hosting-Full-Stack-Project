@@ -7,6 +7,7 @@ jobs:
   build:
     docker:
       - image: "cimg/base:stable"
+      - image: circleci/node:10-browsers
     steps:
       - node/install
       - browser-tools/install-chrome
@@ -21,9 +22,14 @@ jobs:
           command: |
             npm run back-install
       - run:
-          name: Front Test
-          command: |
-            npm run front-test
+            name: Linting
+            command: npm run lint
+      - run:
+            name: Testing
+            command: npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+      - run:
+            name: End to End Test
+            command: npm run e2e -- --protractor-config=e2e/protractor-ci.conf.js
       - run:
           name: Front Build
           command: |

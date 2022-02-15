@@ -3,6 +3,8 @@
         "back-install": "cd udagram-api && npm i",
         "front-install": "cd udagram-frontend && npm i",
         "front-test": "cd udagram-frontend && npm run test",
+        "front-test": "cd udagram-frontend && npm run e2e",
+        "front-test": "cd udagram-frontend && npm run lint",
         "back-build": "cd udagram-api && npm run build",
         "front-build": "cd udagram-frontend && npm run build",
         "front-deploy":"cd udagram-api && npm run deploy"

@@ -24,7 +24,7 @@ Deploy the project to aws [RDS for database, EB for server, S3 for hosting front
 2. Sign up if you have an account or Register. 
 3. Create a post and have fun.
 4. To connect to the api click [here](http://udagram-api-dev.eba-nxjpbr88.us-east-1.elasticbeanstalk.com/)
-
+5. (GitHub Repo)[https://github.com/MarwanAhmed25/Deploy]
 ## How it works
 ```
 The s3 buket connect to the EB Application api server to fetch data and api server connect to RDS database to fetch the data fron it.

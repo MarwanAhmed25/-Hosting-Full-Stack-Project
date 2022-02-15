@@ -23,10 +23,7 @@ jobs:
           name: Back Build
           command: |
             npm run back-build
-      - run:
-            name: Linting
-            command: npm run front-lint
-
+      
       - run:
           name: Front Build
           command: |

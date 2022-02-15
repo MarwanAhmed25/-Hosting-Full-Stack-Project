@@ -27,13 +27,6 @@ jobs:
       - run:
             name: Linting
             command: npm run front-lint
-      - run:
-          name: Testing
-          command: npm run front-test 
-
-      - run:
-         name: End to End Test
-         command: npm run front-e2e 
 
       - run:
           name: Front Build

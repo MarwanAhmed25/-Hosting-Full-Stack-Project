@@ -26,10 +26,10 @@ jobs:
             command: npm run front-lint
       - run:
             name: Testing
-            command: npm run front-test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+            command: npm run front-test 
       - run:
             name: End to End Test
-            command: npm run front-e2e -- --protractor-config=e2e/protractor-ci.conf.js
+            command: npm run front-e2e 
       - run:
           name: Front Build
           command: |

@@ -2,12 +2,12 @@
     "scripts": {
         "back-install": "cd udagram-api && npm i",
         "front-install": "cd udagram-frontend && npm i",
-        "front-test": "cd udagram-frontend && npm run test",
-        "front-e2e": "cd udagram-frontend && npm run e2e",
-        "front-lint": "cd udagram-frontend && npm run lint",
+
         "back-build": "cd udagram-api && npm run build",
         "front-build": "cd udagram-frontend && npm run build",
-        "front-deploy":"cd udagram-api && npm run deploy"
+        
+        "front-deploy":"cd udagram-front && npm run deploy",
+        "back-deploy":"cd udagram-api && npm run deploy"
     },
     "dependencies": {
         "udagram-frontend": "file:udagram-frontend"

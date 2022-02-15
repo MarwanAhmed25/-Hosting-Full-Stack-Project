@@ -1,17 +1,69 @@
 # Udagram
 
-This application is provided to you as an alternative starter project if you do not wish to host your own code done in the previous courses of this nanodegree. The udagram application is a fairly simple application that includes all the major components of a Full-Stack web application.
+Deploy the project to aws [RDS for database, EB for server, S3 for hosting front-end] using circleci to automate the process.
 
-## Getting Started
 
-1. Clone this repo locally into the location of your choice.
-1. Move the content of the udagram folder at the root of the repository as this will become the main content of the project.
-1. Open a terminal and navigate to the root of the repo
-1. follow the instructions in the installation step
+### Content
 
-The project can run but is missing some information to connect to the database and storage service. These will be setup during the course of the project
+```
+1. Get Start
+2. How it works
+   -Infrastructure description
+   -App dependencies
+   -Pipeline process
 
-### Dependencies
+3. Resources
+4. Screenshot for AWS services (RDS, EB, S3)
+5. Dependencies
+6. Author
+```
+
+## Get Started
+
+1. Click on this [link](http://project-1234.s3-website-us-east-1.amazonaws.com/home) for running the project.
+2. Sign up if you have an account or Register. 
+3. Create a post and have fun.
+4. To connect to the api click [here](http://udagram-api-dev.eba-nxjpbr88.us-east-1.elasticbeanstalk.com/)
+
+## How it works
+```
+The s3 buket connect to the EB Application api server to fetch data and api server connect to RDS database to fetch the data fron it.
+
+![plot](./images/digram.png)
+```
+### Infrastructure description
+```
+We use the aws services to host our project S3 that uses to host front end files and build for customers, 
+use RDS for creating the postgres database to store data and retrive it to the api and creating 2 tables feedit and users,
+for web server we use EB for host our back end server all this services in us-east-1 AZ.
+
+```
+### App dependencies
+```
+we use node and ionic for front and back end for creating server and ui for users.
+```
+### Pipeline process
+```
+using Circleci for CI/CD that automate our deployment by connecting with github repo , every commit done the pipeline automaticlly fire and test our code and build to sure that the code is safty 100% after that deploy the code to be provide to customers.
+```
+## Resources
+- Tutors
+- Udacity lessons
+- Circleci Documentation
+- Anglar Documentation
+- Node Documentation
+- Google chrome
+
+## Screenshot
+
+- In folder Images in root directory
+![S3 image](./images/s3.png)
+![App image](./images/app.png)
+![RDS image](./images/rds.png)
+![Env image](./images/env.png)
+
+
+## Dependencies
 
 ```
 - Node v14.15.1 (LTS) or more recent. While older versions can work it is advisable to keep node to latest LTS version
@@ -26,40 +78,5 @@ The project can run but is missing some information to connect to the database a
 
 ```
 
-### Installation
-
-Provision the necessary AWS services needed for running the application:
-
-1. In AWS, provision a publicly available RDS database running Postgres. <Place holder for link to classroom article>
-1. In AWS, provision a s3 bucket for hosting the uploaded files. <Place holder for tlink to classroom article>
-1. Export the ENV variables needed or use a package like [dotnev](https://www.npmjs.com/package/dotenv)/.
-1. From the root of the repo, navigate udagram-api folder `cd starter/udagram-api` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run dev`.
-1. Without closing the terminal in step 1, navigate to the udagram-frontend `cd starter/udagram-frontend` to intall the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
-
-## Testing
-
-This project contains two different test suite: unit tests and End-To-End tests(e2e). Follow these steps to run the tests.
-
-1. `cd starter/udagram-frontend`
-1. `npm run test`
-1. `npm run e2e`
-
-There are no Unit test on the back-end
-
-### Unit Tests:
-
-Unit tests are using the Jasmine Framework.
-
-### End to End Tests:
-
-The e2e tests are using Protractor and Jasmine.
-
-## Built With
-
-- [Angular](https://angular.io/) - Single Page Application Framework
-- [Node](https://nodejs.org) - Javascript Runtime
-- [Express](https://expressjs.com/) - Javascript API Framework
-
-## License
-
-[License](LICENSE.txt)
+## Author 
+- Marwan Ahmed

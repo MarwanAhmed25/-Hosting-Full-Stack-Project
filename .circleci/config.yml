@@ -9,7 +9,6 @@ jobs:
       - image: "cimg/base:stable"
     steps:
       - node/install
-      - browser-tools/install-chrome
       - checkout
       - aws-cli/setup
       - run:

@@ -29,8 +29,9 @@ Deploy the project to aws [RDS for database, EB for server, S3 for hosting front
 ```
 The s3 buket connect to the EB Application api server to fetch data and api server connect to RDS database to fetch the data fron it.
 
-![plot](./images/digram.png)
 ```
+![digram](./images/digram.png)
+
 ### Infrastructure description
 ```
 We use the aws services to host our project S3 that uses to host front end files and build for customers, 

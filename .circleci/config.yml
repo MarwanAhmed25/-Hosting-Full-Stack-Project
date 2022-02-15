@@ -21,6 +21,10 @@ jobs:
           command: |
             npm run back-install
       - run:
+          name: Front Test
+          command: |
+            npm run front-test
+      - run:
           name: Front Build
           command: |
             npm run front-build

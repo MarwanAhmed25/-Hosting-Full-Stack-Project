@@ -7,7 +7,6 @@ jobs:
   build:
     docker:
       - image: "cimg/base:stable"
-      - image: circleci/node:10-browsers
     steps:
       - node/install
       - browser-tools/install-chrome
@@ -22,17 +21,25 @@ jobs:
           command: |
             npm run back-install
       - run:
+          name: Back Build
+          command: |
+            npm run back-build
+      - run:
             name: Linting
             command: npm run front-lint
-      
+      - run:
+          name: Testing
+          command: npm run front-test 
+
+      - run:
+         name: End to End Test
+         command: npm run front-e2e 
+
       - run:
           name: Front Build
           command: |
             npm run front-build
-      - run:
-          name: Back Build
-          command: |
-            npm run back-build
+      
       - run:
           name: Deploy App
           command: |

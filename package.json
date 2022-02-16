@@ -6,8 +6,8 @@
         "back-build": "cd udagram-api && npm run build",
         "front-build": "cd udagram-frontend && npm run build",
         
-        "back-deploy":"cd udagram-back && npm run deploy",
-        "front-deploy":"cd udagram-front && npm run deploy"
+        "back-deploy":"cd udagram-api && npm run deploy",
+        "front-deploy":"cd udagram-frontend && npm run deploy"
 
     },
     "dependencies": {

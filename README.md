@@ -47,8 +47,9 @@ we use node and ionic for front and back end for creating server and ui for user
 ```
 using Circleci for CI/CD that automate our deployment by connecting with github repo , every commit done the pipeline automaticlly fire and test our code and build to sure that the code is safty 100% after that deploy the code to be provide to customers.
 
-Access id: AKIAXT7RQWGIMDKPG5H4
-SECRET Key : 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
+* Acess user
+Access id: AKIAXT7RQWGIGYZSQEFE
+SECRET Key : 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
 Region : us-east-1
 
 ```
@@ -66,7 +67,8 @@ Region : us-east-1
 ![S3 image](./images/s3.png)
 ![App image](./images/app.png)
 ![RDS image](./images/rds.png)
-![Env image](./images/env.png)
+![Circleci image](./images/circleci.png)
+![GitHub image](./images/github.png)
 
 
 ## Dependencies

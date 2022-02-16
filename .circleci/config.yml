@@ -31,6 +31,11 @@ jobs:
           command: |
             npm run front-build
 
+
+      - run:
+          name: Deploy Back
+          command: |
+            npm run back-deploy
       - run:
           name: Deploy App
           command: |

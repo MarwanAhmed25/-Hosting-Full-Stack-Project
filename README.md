@@ -23,7 +23,7 @@ Deploy the project to aws [RDS for database, EB for server, S3 for hosting front
 1. Click on this [link](http://project-1234.s3-website-us-east-1.amazonaws.com/) for running the project.
 2. Sign up if you have an account or Register. 
 3. Create a post and have fun.
-4. To connect to the api click [here](http://udagram-api-dev.eba-nxjpbr88.us-east-1.elasticbeanstalk.com/)
+4. To connect to the api click [here](http://dagram-dev.eba-rh3ysf7r.us-east-1.elasticbeanstalk.com/)
 5. [GitHub Repo](https://github.com/MarwanAhmed25/Deploy)
 ## How it works
 ```

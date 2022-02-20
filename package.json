@@ -1,5 +1,6 @@
 {
     "scripts": {
+        "install":"npm i",
         "back-install": "cd udagram-api && npm i",
         "front-install": "cd udagram-frontend && npm i",
         "back-build": "cd udagram-api && npm-run-all clean build",

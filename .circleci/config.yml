@@ -5,11 +5,8 @@ orbs:
   browser-tools: circleci/browser-tools@1.2.4
   eb: circleci/aws-elastic-beanstalk@2.0.1
 jobs:
-  branches:
-    only:
-      - master
-
   build:
+    
     docker:
       - image: "cimg/base:stable"
     steps:

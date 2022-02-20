@@ -6,11 +6,7 @@ orbs:
   eb: circleci/aws-elastic-beanstalk@2.0.1
 jobs:
   build:
-    - build_server_pdfs: 
-          filters:
-            branches:
-              only: /master\/.*/
-
+   
     docker:
       - image: "cimg/base:stable"
     steps:
@@ -19,10 +15,6 @@ jobs:
       - aws-cli/setup
       - eb/setup
 
-      - run:
-          name: Install
-          command: |
-            npm run install
       - run:
           name: Front Install
           command: |

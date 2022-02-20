@@ -31,6 +31,14 @@ jobs:
           command: |
             npm run front-build
 
+      - run:
+          name: Back Test
+          command: |
+            npm run back-test
+      - run:
+          name: Front Test
+          command: |
+            npm run front-test
 
       - run:
           name: Deploy Back

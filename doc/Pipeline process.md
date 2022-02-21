@@ -21,11 +21,12 @@
 
 5. open Terminal:
 >Don't forget to install aws eb cli [here](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html)
- - aws configure <enter your credintials>
+ - aws configure ***enter your credintials>***
  - run the code udagram/udagram-api 
  >npm run deploy
->Don't forget to change the setenv variables with yours.
+ 
+***Don't forget to change the setenv variables with yours.***
  - run the code udagram/udagram-front 
  >npm run deploy
->Don't forget to change the bucket name with yours. aws s3 cp --recursive --acl public-read ./www s3://bucket-name/
+***Don't forget to change the bucket name with yours. aws s3 cp --recursive --acl public-read ./www s3://bucket-name/***
 

@@ -1,5 +1,5 @@
 # Infrastructure
-
+![digram](../images/digram.png)
 
 ### Content
 1- Web server

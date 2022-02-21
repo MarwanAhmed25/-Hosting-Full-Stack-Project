@@ -6,7 +6,7 @@
 - Push The changes to Github repo branch master.
 - Automaticlly the circleci build and deploy the changes to aws.
 
-![pipeline image](./images/pipeline.png)
+![pipeline image](../images/pipeline.png)
 
 
 ## How to deploy manualy

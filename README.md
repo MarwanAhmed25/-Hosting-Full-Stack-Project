@@ -1,93 +1,89 @@
-# Udagram [![MarwanAhmed25](https://circleci.com/gh/MarwanAhmed25/Deploy.svg?style=svg)](https://app.circleci.com/pipelines/github/MarwanAhmed25/Deploy?branch=master&filter=all)
+# Hosting Full Stack Project [![MarwanAhmed25](https://circleci.com/gh/MarwanAhmed25/Deploy.svg?style=svg)](https://app.circleci.com/pipelines/github/MarwanAhmed25/Deploy?branch=master&filter=all)
 
+### Content 
+   1- Decription
+   - set up 
+   - run project 
+        
 
-Deploy the project to aws [RDS for database, EB for server, S3 for hosting front-end] using circleci to automate the process.
+   2- Technologies
+   3- Tools 
+   4- Resources 
+   5- Auther
 
+## Description 
 
-### Content
+   The project contains from back-end -- nodejs for the api -- , database -- posgrsql for database -- and ui -- angular for ui 
+
+   - How to run the project
+        
+        port: 4000
+
+   - set up
+        install an ide for running node (recommended vs code) and browser (chrome)
+
+        install node v16.13.2 and npm 8.1.2 and postgres for database
+
+        install all packages run scripts:
+                                          npm run install
+                                          npm run back-install
+                                          npm run front-install
+                           
+            
+        To build project run:
+                              npm run back-build
+                              npm run front-build
+         To run the project:
+                              npm run back-start
+                              npm run front-start
+
+   - Before run the project you should set up Database
+
+      1- create database = "store" and super user = "marwan" & password ="marwan" with postgres name as you want 
+
+        Database: 
+                port: 5432
+                create user: create user marwan with password 'marwan';
+
+                create database: create database store owner marwan;
+                
+                grant all on database store to marwan;
+      2- Create .env file 
+
+         create .env file in the root directory and set variable:
+```
+ POSTGRES_USERNAME="postgres" <username>
+ POSTGRES_PASSWORD="postgres" <your password>
+ POSTGRES_DB="postgres" <your user>
+ PORT_DB="5432" 
+ POSTGRES_HOST="database-1.c6eyc2xkmulu.us-east-1.rds.amazonaws.com" <localhost> if local
+ AWS_REGION="us-east-1" 
+ AWS_PROFILE="testuser" 
+ AWS_BUCKET="project-1234" 
+ URL="localhost:8080" 
+ JWT_SECRET="22"
 
 ```
-1. Get Start
-2. How it works
-   -Infrastructure description
-   -App dependencies
-   -Pipeline process
+        
 
-3. Resources
-4. Screenshot for AWS services (RDS, EB, S3)
-5. Dependencies
-6. Author
-```
+    
+## Technologies 
+   - nodejs 
+   - typescript 
+   - express 
+   - jasmine
+   - angular
+   - postgres
 
-## Get Started
+## Tools 
+   - vs code 
+   - google chrome
 
-1. Click on this [link](http://project-1234.s3-website-us-east-1.amazonaws.com/) for running the project.
-2. Sign up if you have an account or Register. 
-3. Create a post and have fun.
-4. To connect to the api click [here](http://dagram-dev.eba-rh3ysf7r.us-east-1.elasticbeanstalk.com/)
-5. [GitHub Repo](https://github.com/MarwanAhmed25/Deploy)
-## How it works
-```
-The s3 buket connect to the EB Application api server to fetch data and api server connect to RDS database to fetch the data fron it.
+## Resources 
+   - udacity 
+   - community slack and toturs 
+   - npmjs.com
+   - google
 
-```
-![digram](./images/digram.png)
-
-### Infrastructure description
-```
-We use the aws services to host our project S3 that uses to host front end files and build for customers, 
-use RDS for creating the postgres database to store data and retrive it to the api and creating 2 tables feedit and users,
-for web server we use EB for host our back end server all this services in us-east-1 AZ.
-
-```
-### App dependencies
-```
-we use node and ionic for front and back end for creating server and ui for users.
-```
-### Pipeline process
-```
-using Circleci for CI/CD that automate our deployment by connecting with github repo , every commit done the pipeline automaticlly fire and test our code and build to sure that the code is safty 100% after that deploy the code to be provide to customers.
-
-* Acess user
-Access id: AKIAXT7RQWGIGYZSQEFE
-SECRET Key : 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
-Region : us-east-1
-
-```
-## Resources
-- Tutors
-- Udacity lessons
-- Circleci Documentation
-- Anglar Documentation
-- Node Documentation
-- Google chrome
-
-## Screenshot
-
-- In folder Images in root directory
-![S3 image](./images/s3.png)
-![App image](./images/app.png)
-![RDS image](./images/rds.png)
-![Circleci image](./images/circleci.png)
-![GitHub image](./images/github.png)
-
-
-## Dependencies
-
-```
-- Node v14.15.1 (LTS) or more recent. While older versions can work it is advisable to keep node to latest LTS version
-
-- npm 6.14.8 (LTS) or more recent, Yarn can work but was not tested for this project
-
-- AWS CLI v2, v1 can work but was not tested for this project
-
-- A RDS database running Postgres.
-
-- A S3 bucket for hosting uploaded pictures.
-
-```
-
-## Author 
-- Marwan Ahmed
-
-
+## Auther: 
+** Marwan Ahmed(udacity student) **

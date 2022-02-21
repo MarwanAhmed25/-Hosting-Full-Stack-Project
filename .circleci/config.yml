@@ -58,5 +58,6 @@ workflows:
     jobs:
       - build
         filters:
-            branches:
-              only: /master\/.*/
+          branches:
+            only:
+              - master

@@ -55,10 +55,10 @@ jobs:
             npm run front-deploy
 
 workflows:
-  build_deploy:
-    jobs:
-      - build
-        filters:
-          branches:
-            only:
-              - master
+    build_deploy:
+      jobs:
+        - build:
+            filters:
+              branches:
+                only:
+                  - master

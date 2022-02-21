@@ -1,15 +1,15 @@
 # Udagram 
 
 ### Content 
-   1- Decription
+   1. Decription
    - set up 
    - run project 
         
 
-   2- Technologies
-   3- Tools 
-   4- Resources 
-   5- Auther
+   2. Technologies
+   3. Tools 
+   4. Resources 
+   5. Auther
 
 ## Description 
 
@@ -39,7 +39,7 @@
 
    - Before run the project you should set up Database
 
-      1- create database = "store" and super user = "marwan" & password ="marwan" with postgres name as you want 
+      1. create database = "store" and super user = "marwan" & password ="marwan" with postgres name as you want 
 
         Database: 
                 port: 5432
@@ -48,9 +48,9 @@
                 create database: create database store owner marwan;
                 
                 grant all on database store to marwan;
-      2- Create .env file 
+      2. Create .env file 
 
-         create .env file in the root directory and set variable:
+    >create .env file in the root directory and set variable:
 ```
  POSTGRES_USERNAME="postgres" <username>
  POSTGRES_PASSWORD="postgres" <your password>
@@ -86,4 +86,4 @@
    - google
 
 ## Auther: 
-** Marwan Ahmed(udacity student) **
+*** Marwan Ahmed(udacity student) ***

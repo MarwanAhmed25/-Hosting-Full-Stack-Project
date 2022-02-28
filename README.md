@@ -1,5 +1,6 @@
 # Hosting Full Stack Project [![MarwanAhmed25](https://circleci.com/gh/MarwanAhmed25/Hosting-Full-Stack-Project.svg?style=svg)](https://app.circleci.com/pipelines/github/MarwanAhmed25/Deploy?branch=master&filter=all)
 
+The Deployment failed becuace the aws services stopped...
 Deploy the project to aws [RDS for database, EB for server, S3 for hosting front-end] using circleci to automate the process.
 
 
